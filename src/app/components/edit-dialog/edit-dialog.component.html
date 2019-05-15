@@ -1,0 +1,17 @@
+<form [formGroup] = "form">
+    <mat-form-field>
+      <input type="text" matInput formControlName="title" placeholder="Give a new Title:">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input type="text" matInput formControlName="description" placeholder="Description:">
+    </mat-form-field><br>
+    <mat-form-field>
+      <input type="number" matInput formControlName="price" placeholder="Give a new Price:">
+    </mat-form-field><br>
+
+    <div>
+    <button mat-button mat-dialog-close color="primary">Cancel</button>
+    <button [disabled]="form.invalid" mat-button (click)="save()" color="primary">Save</button>
+    </div>
+  </form>

@@ -1,0 +1,41 @@
+
+  .spacer{
+    padding-left: 50px
+  }
+  
+  .spacer2{
+    padding-block-end: 10px;
+  }
+
+  i:hover{
+    cursor: pointer;
+  }
+  
+  i{
+    color: rgb(250, 249, 249);
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  h4{
+    color: antiquewhite
+  }
+  mat-toolbar-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    overflow: auto;  
+  }
+
+  mat-card-header {
+    display: flex;
+    flex-direction: column;
+    max-height: 350px;
+
+  
+    overflow: auto;  
+  }
+
+
+

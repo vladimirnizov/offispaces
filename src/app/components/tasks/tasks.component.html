@@ -1,0 +1,20 @@
+
+<br>
+<h1>My shopping list:</h1>
+<mat-toolbar>
+        <button (click)="add()" mat-raised-button	 matTooltip="New task">add new task</button>
+        <span class="spacer"></span>
+        <button  mat-raised-button (click)="sortPrice()" color="primary">Sort by price</button>
+        <span class="spacer"></span>
+        <button  mat-raised-button (click)="sortName()" color="primary">Sort by name</button>   
+    </mat-toolbar>
+<h2 *ngIf="tasks.length<1">No tasks </h2>
+<div class="container">
+    <div class="row">
+       <app-task-display *ngFor="let task of tasks; let ind = index" 
+                         [currentTask]="task" [ind]="ind" (del)="del($event)" (edit)="edit($event)">
+       </app-task-display>  
+    </div>
+</div>
+
+    
